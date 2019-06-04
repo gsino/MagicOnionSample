@@ -1,0 +1,16 @@
+﻿syntax = "proto3";
+
+option csharp_namespace = "Sample.PureGrpc.Definitions";
+
+service Calculator {
+    rpc Sum (SumRequest) returns (SumResponse);
+}
+
+message SumRequest {
+    int32 x = 1;
+    int32 y = 2;
+}
+
+message SumResponse {
+    int32 result = 1;
+}

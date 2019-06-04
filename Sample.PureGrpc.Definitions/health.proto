@@ -1,0 +1,10 @@
+﻿syntax = "proto3";
+
+option csharp_namespace = "Sample.PureGrpc.Definitions";
+
+service Health {
+    rpc IsHealthy (Empty) returns (Empty);
+}
+
+message Empty {
+}
